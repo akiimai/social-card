@@ -1,5 +1,5 @@
 import React from 'react'; 
-
+import CardProfileLinks from './Links'; 
 class CardBack extends React.Component {
     render() {
         return (
@@ -14,6 +14,8 @@ class CardBack extends React.Component {
                             </div>
                         </div>
                     </form>
+
+                    <CardProfileLinks />
                 </div>
             </div>
         )   

@@ -6,9 +6,11 @@ import Back from './Back';
 class Card extends React.Component {
     render() {
         return (
-            <div>
-                <Front />
-                <Back />
+            <div className='card-container'>
+                <div className='card-body'>
+                    <Front />
+                    <Back />
+                </div>
             </div>
         )
     }
