@@ -8,7 +8,7 @@ class CardFront extends React.Component {
                 <div className='container-fluid'>
                     <div className='row'>
                         <div className='col-xs-6'>
-                            <img src={profile} style={{width: "50%"}} alt="profile"/>
+                            <img src={profile} style={{width: "10%"}} alt="profile"/>
                         </div>
 
                         <div className='col-xs-6 side-front-content'>
@@ -16,7 +16,7 @@ class CardFront extends React.Component {
                             <h1>Full Stack Developer</h1>
                             <p>Aki is a passionate full-stack developer</p>
                             <p>Skills include React, Javascript, NodeJS, HTML, Bootstrap, CSS, Adobe Illustrator, Adobe Photoshop</p>
-                            <p>She enjoys playing taiko (Japanese drums), watching cooking shows on Netflix, and finding good places to eat.</p>
+                            <p>She enjoys playing Japanese taiko drums, watching cooking shows on Netflix, and finding good places to eat.</p>
                         </div>
                     </div>
                 </div>
