@@ -14,8 +14,8 @@ class CardFront extends React.Component {
                         <div className='col-xs-6 side-front-content'>
                             <h2>Los Angeles</h2>
                             <h1>Full Stack Developer</h1>
-                            <p>Aki is a passionate full-stack developer</p>
-                            <p>Skills include React, Javascript, NodeJS, HTML, Bootstrap, CSS, Adobe Illustrator, Adobe Photoshop</p>
+                            <p>Aki is a passionate developer searching for her next opportunity to grow, learn, and contribute as a full-stack developer. </p>
+                            <p>Her skills include React, Javascript, NodeJS, HTML, Bootstrap, CSS, Adobe Illustrator, Adobe Photoshop</p>
                             <p>She enjoys playing Japanese taiko drums, watching cooking shows on Netflix, and finding good places to eat.</p>
                         </div>
                     </div>

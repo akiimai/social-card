@@ -79,7 +79,6 @@ img {
 } 
 
 .side-front-content {
-    background-color: #0c81f6;
     padding-top: 32px; 
     padding-right: 32px; 
     padding-bottom: 32px; 
@@ -162,7 +161,7 @@ textarea {
     } */
 }
 
-a { 
+.social-links a { 
     color: #212121; 
     transition: opacity .25s ease-in; 
 
@@ -172,10 +171,10 @@ a {
     } */
 }
 
-a:focus:hover {
+.social-links a:focus:hover {
     opacity: .5; 
 }
 
-i {
+.social-links i {
     font-size: 24px; 
 }
