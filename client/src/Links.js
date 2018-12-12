@@ -6,7 +6,7 @@ class CardProfileLinks extends React.Component {
         const linkList = profileLinks.map((link, index) => 
             <li key={index}>
                 <a href='http://www.wikipedia.com'>
-                    <i className={'fa-fa' + link} ></i>
+                    <i className={'fab fa-' + link} ></i>
                 </a>
             </li>
         )

@@ -8,7 +8,7 @@ class CardFront extends React.Component {
                 <div className='container-fluid'>
                     <div className='row'>
                         <div className='col-xs-6'>
-                            <img src={profile} style={{width: "10%"}} alt="profile"/>
+                            <img src={profile} alt="profile"/>
                         </div>
 
                         <div className='col-xs-6 side-front-content'>
