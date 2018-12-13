@@ -40,24 +40,24 @@ class CardBack extends React.Component {
 
                     <form formAction='' className='card-form'>
                         <div className='row'>
-                            <div className='col-xs-6'>
+                            <div className='col-md'>
                                 <CardInput name='contactFirstName' id='contactFirstName' type='text' placeholder='Your first name' />
                             </div>
-                            <div className='col-xs-6'>
+                            <div className='col-md'>
                                 <CardInput name='contactLastName' id='contactLastName' type='text' placeholder='Your last name' />
                             </div>
                         </div>
 
                         <div className='row'>
-                            <div className='col-xs-6'>
+                            <div className='col-md'>
                                 <CardInput name='contactEmail' id='contactEmail' type='email' placeholder='Your email address' />
                             </div>
-                            <div className='col-xs-6'>
+                            <div className='col-md'>
                                 <CardInput name='contactSubject' id='contactSubject' type='text' placeholder='Subject' />
                             </div>
                         </div>
 
-                        {/* <CardTextarea name='contactMessage' id='contactMessage' placeholder='Your message' /> */}
+                        <CardTextarea name='contactMessage' id='contactMessage' placeholder='Your message' />
                         <CardBtn className='btn btn-primary' type='submit' value='Send message' />
                     </form>
 
