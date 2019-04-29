@@ -1,8 +1,11 @@
 import React from 'react';
 import './SocialCard.css';
-import Front from './components/Front';
-import Back from './components/Back';
 import BioFront from './components/BioFront';
+import BioBack from './components/BioBack';
+import SkillsFront from './components/SkillsFront';
+import SkillsBack from './components/SkillsBack';
+import HobbyFront from './components/HobbyFront';
+import HobbyBack from './components/HobbyBack';
 
 class Card extends React.Component {
     render() {
@@ -10,21 +13,18 @@ class Card extends React.Component {
             <div className='card-box'>
                 <div className="card" id="bio">
                     <BioFront />
+                    <BioBack />
                 </div>
                 <div className="card" id="skills">
+                    <SkillsFront />
+                    <SkillsBack />
                 </div>
                 <div className="card" id="interests">
+                    <HobbyFront />
+                    <HobbyBack />
                 </div>
 
                 {/* <div className='card-body'>
-                    <Front />
-                    <Back />
-                </div> */}
-                {/* <div className='card-body'>
-                    <Front />
-                    <Back />
-                </div>
-                <div className='card-body'>
                     <Front />
                     <Back />
                 </div> */}
