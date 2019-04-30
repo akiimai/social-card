@@ -23,11 +23,6 @@ class Card extends React.Component {
                     <HobbyFront />
                     <HobbyBack />
                 </div>
-
-                {/* <div className='card-body'>
-                    <Front />
-                    <Back />
-                </div> */}
             </div>
         )
     }

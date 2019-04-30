@@ -29,7 +29,9 @@ h2 {
     font-weight: 400;
 }
 
-/* Card container */
+/* ---------------*/
+/* Card Container */
+/* ---------------*/
 .card-container {
     display: flex; 
     justify-content: center;
@@ -51,6 +53,18 @@ h2 {
     margin: auto;
 }
 
+.card {
+    height: 350px;
+    width: 350px;
+    margin: 5px;
+    background-color: #EFEFEF;  
+    border: none;
+    transform-style: preserve-3d;
+    transition: all .7s linear;
+    cursor: pointer;
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,0.2);
+}
+
 @media only screen and (max-width: 1100px) {
     html, body {
         height: auto;
@@ -65,29 +79,76 @@ h2 {
     }
 }
 
-.card {
-    height: 350px;
-    width: 350px;
-    margin: 5px;
-    background-color: #EFEFEF; 
-    border: none;
+/* ----------*/
+/* Card Body */
+/* ----------*/
+
+/* Card Sides */
+.side {
+    position: absolute; 
     overflow: hidden;
-    transform-style: preserve-3d;
-    transition: all .7s linear;
-    cursor: pointer;
+    backface-visibility: hidden;
 }
 
-.front-image {
-    width: 100%;
-    height: 100%;
-}
-
-/* Card body */
+/* Frontside */
 .front-side {
+    height: 100%;
+    width: 100%;
+}
+
+.front-text {
     position: relative; 
-    top: 0; bottom: 0;
+    top: 40%; bottom: 0;
+    left: 40%; right: 0;
+    margin: auto;
+    color: #EFEFEF;
+}
+
+.about-front {
+    background: linear-gradient(
+        rgba(0,0,0, 0.3),
+        rgba(0,0,0,0.3)), url('./images/corgi.jpg');
+    background-size: cover;
+}
+
+.skills-front {
+    background: linear-gradient(
+        rgba(0,0,0, 0.5),
+        rgba(0,0,0,0.5)), url('./images//cat.jpg');
+    background-size: cover;
+}
+
+.hobby-front {
+    background: linear-gradient(
+        rgba(0,0,0, 0.5),
+        rgba(0,0,0,0.5)), url('./images/dog.jpg');
+    background-size: cover;
+}
+
+/* Backside */
+.back-side {
+    height: 100%;
+    width: 100%;
+    z-index: 2; 
+    position: absolute;
+    text-align: center;
+    transform: rotateY(180deg);
+}
+
+.back-text {
+    position: relative; 
+    top: 40%; bottom: 0;
     left: 0; right: 0;
     margin: auto;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
 }
 
 /* Flipping Card */
@@ -99,88 +160,6 @@ h2 {
     opacity: 0;
     visibility: hidden;
     transition: opacity 1s ease-in, visibility .75s linear;
-}
-
-/* Card Sides */
-.side {
-    position: absolute; 
-    overflow: hidden;
-    backface-visibility: hidden;
-}
-
-/* .card-side {
-    position: absolute;
-    top: 0;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-    color: #212121;
-    background-color: #fff;
-    backface-visibility: hidden;
-    box-shadow: 0 10px 35px rgba(50,50,93,.1),0 2px 15px rgba(0,0,0,.07);
-} */
-
-/* Frontside */
-.side-front [class^=col-xs]:first-of-type {
-    padding-left: 0; 
-}
-
-.side-front-content {
-    margin: 20px; 
-}
-
-/* Backside */
-/* .side-back {
-    z-index: 2;
-    padding: 32px;
-    text-align: center;
-    transform: rotateY(180deg);
-} */
-
-/* Form */
-.card-form {
-    margin-top: 32px;
-}
-
-.card-form .row + .row,
-.card-form .row + fieldset,
-.card-form fieldset + fieldset {
-    margin-top: 16px;
-}
-
-input,
-textarea {
-    padding: 8px;
-    width: 100%;
-    border-top: 0;
-    border-right: 0;
-    border-bottom: 1px solid #eee;
-    border-left: 0;
-}
-
-input:focus,
-textarea:focus {
-    outline: 0;
-    border-bottom: 1px solid #0c81f6;
-}
-
-textarea {
-    max-height: 80px;
-    resize: vertical;
-}
-
-.btn-primary {
-    padding: 8px 16px;
-    font-size: 16px;
-    background-color: #0c81f6;
-    border: none;
-    box-shadow: 0 10px 35px rgba(50,50,93,.1),0 2px 15px rgba(0,0,0,.07);
-    transition: background-color .25s ease-in, box-shadow .25s ease-in;
-}
-
-.btn-primary:focus:hover {
-    background-color: lighten(#0c81f6, 15%);
-    box-shadow: 0 18px 35px rgba(50,50,93,.1),0 8px 15px rgba(0,0,0,.07);
 }
 
 /* Social Links */
